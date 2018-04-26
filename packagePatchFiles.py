@@ -4,34 +4,34 @@
 import datetime
 import os.path
 import shutil
-import ThirdPartyAuthAction
-import BBBankSocialAccount
-import BaseServicesSystemproperties
-import IValidatorExceptionConstants
-import Constants
-import AcmMacBypassHandler
-import RadiusRequestUtil
-import OnlineUserNewAction
-import OnlineUserExporter
-import AccountFlag
-import core_exception_en_US
-import core_exception_pt_BR
+import module1
+import module2
+import module3
+import module4
+import module5
+import module6
+import module7
+import module8
+import module9
+import module10
+import module11
+import module112
 
 
 # 数据结构
 moduleList = [
-    "ThirdPartyAuthAction",
-    "BBBankSocialAccount",
-    "BaseServicesSystemproperties",
-    "IValidatorExceptionConstants",
-    "Constants",
-    "AcmMacBypassHandler",
-    "RadiusRequestUtil",
-    "OnlineUserNewAction",
-    "OnlineUserExporter",
-    "AccountFlag",
-    "core_exception_en_US",
-    "core_exception_pt_BR"
+    "module1",
+    "module2",
+    "module3",
+    "module4",
+    "module5",
+    "module6",
+    "module7",
+    "module8",
+    "module9",
+    "module10",
+    "module11",
+    "module12"
 ]
 
 # 方法定义
@@ -63,7 +63,7 @@ def copy(targetDir, sourceFileName, targetSubFileNameList):
 #  3. 复制源文件，生成每个目标文件
 #  4. 是否遍历了每个模块，如果没有，跳到步骤2
 print("开始打包.\n")
-targetDir = r"D:\31_SDN\06_开发需求\oauth2.0\补丁打包"
+targetDir = r"D:\xxx\06_开发需求\yyy\补丁打包"
 packageDir = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 targetDir = os.path.join(targetDir, packageDir)
 print("打包路径为: " + targetDir)
